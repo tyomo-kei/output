@@ -2,7 +2,7 @@ class ErrorsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @errors = Error.all
+    @errors = Error.includes(:user).order("created_at DESC")
   end
 
   def new
@@ -20,7 +20,7 @@ class ErrorsController < ApplicationController
 
   private
   def error_params
-    params.require(:error).permit(:erroe_message, :language, :status, :code, :cauce)
+    params.require(:error).permit(:erroe_message, :language, :status, :code, :cauce).merge(user_id: current_user.id)
   end
 
   def move_to_index

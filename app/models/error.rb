@@ -4,4 +4,5 @@ class Error < ApplicationRecord
   validates :status, presence: true
   validates :code, presence: true
   validates :cauce, presence: true
+  belongs_to :user
 end
