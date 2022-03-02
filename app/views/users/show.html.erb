@@ -1,9 +1,6 @@
 <div class="contents row">
   <p><%= @nickname %>さんの投稿一覧</p>
   <% @errors.each do |error| %>
-    <div class="content_post" style="background-image">
-      <p><%= error.erroe_message %></p>
-      <span class="name"><%= error.language %></span>
-    </div>
+   <%= render partial: "error", locals: { error: error } %>
   <% end %>
 </div>

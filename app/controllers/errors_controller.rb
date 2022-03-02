@@ -1,5 +1,5 @@
 class ErrorsController < ApplicationController
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
 
   def index
     @errors = Error.includes(:user).order("created_at DESC")
@@ -16,6 +16,10 @@ class ErrorsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def search
+    @errors = Error.search(params[:keyword])
   end
 
   private

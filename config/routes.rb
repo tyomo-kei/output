@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'errors#index'
-  resources :errors, only: [:index, :new, :create, :destroy]
+  resources :errors, only: [:index, :new, :create, :destroy] do
+    collection do
+      get 'search'
+    end
+  end
   resources :users, only: :show
 end
