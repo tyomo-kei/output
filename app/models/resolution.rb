@@ -1,4 +1,4 @@
-class Error < ApplicationRecord
+class Resolution < ApplicationRecord
   validates :erroe_message, presence: true
   validates :language, presence: true
   validates :status, presence: true

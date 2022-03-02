@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'errors#index'
-  resources :errors, only: [:index, :new, :create, :destroy] do
+  root to: 'resolutions#index'
+  resources :resolutions do
     collection do
       get 'search'
     end

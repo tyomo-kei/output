@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ErrorTest < ActiveSupport::TestCase
+class ResolutionTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
