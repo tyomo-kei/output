@@ -24,6 +24,10 @@ class ResolutionsController < ApplicationController
     redirect_to root_path 
   end
 
+  def show
+    @resolution = Resolution.find(params[:id])
+  end  
+
   def edit
     @resolution = Resolution.find(params[:id])
   end

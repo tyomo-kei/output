@@ -1,14 +1,17 @@
 <div class="more">
   <div class="detail">
   <ul class="more_list">
+    <li>
+      <%= link_to '詳細', resolution_path(resolution.id), method: :get %>
+    </li>
       <% if user_signed_in? && current_user.id == resolution.user_id %>
-        <li>
-          <%= link_to '編集', edit_resolution_path(resolution.id), method: :get %>
-        </li>
-        <li>
-          <%= link_to '削除', resolution_path(resolution.id), method: :delete %>
-        </li>
-        <% end %>
+      <li>
+        <%= link_to '編集', edit_resolution_path(resolution.id), method: :get %>
+      </li>
+      <li>
+        <%= link_to '削除', resolution_path(resolution.id), method: :delete %>
+      </li>
+      <% end %>
     </ul>
   <h4> タイトル </h4>
     <%= link_to "#{resolution.user.nickname}さん", "/users/#{resolution.user.id}"%>
