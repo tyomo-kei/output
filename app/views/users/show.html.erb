@@ -1,5 +1,5 @@
 <div class="contents row">
-  <p><%= @user.nickname %>さんの投稿一覧</p>
+  <p class="user-detail"><%= @user.nickname %>さんの投稿一覧</p>
   <% @resolutions.each do |resolution| %>
    <%= render partial: "resolutions/resolution", locals: { resolution: resolution } %>
   <% end %>

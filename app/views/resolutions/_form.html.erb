@@ -1,13 +1,25 @@
  <%= form_with(model: @resolution, local: true) do |form| %>
   エラーメッセージ
+  <div class="reslution-form"> 
     <%= form.text_field :erroe_message %>
+  </div>
     言語
+  <div class="reslution-form"> 
     <%= form.text_field :language %>
+  </div>
     エラーが起きた状況
+  <div class="reslution-form"> 
     <%= form.text_field :status %>
+  </div>
     コードを記述
+  <div class="reslution-form"> 
     <%= form.text_area :code,  rows: "10" %>
+  </div>
     原因・教訓
+  <div class="reslution-form"> 
     <%= form.text_area :cauce,  rows: "10" %>
+  </div>
+  <div class="reslution-form">
     <%= form.submit "投稿する" %>
+  </div>
 <% end %>
