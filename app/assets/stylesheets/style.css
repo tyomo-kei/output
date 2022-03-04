@@ -708,12 +708,12 @@ form input[type="submit"] {
 header.header div.header__bar.row div.grid-6 a.post {
   padding: 8px 20px;
   font-size: 14px;
-  border: 2px solid #57C3E9;
-  color: #57C3E9;
+  color: white;
   font-weight: bold;
   text-align: center;
   border-radius: 3px;
   display: inline-block;
+  background: linear-gradient(-135deg, #FF00FF, #9941D8);
 }
 
 .btn:hover,
@@ -989,7 +989,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color: #57C3E9;
+  background: linear-gradient(-135deg, #FF00FF, #9941D8);
   border-radius: 20px;
   color: #fff;
   border: 0;
@@ -1001,11 +1001,12 @@ form input[type="submit"]:hover {
 }
 
 .container {
-  margin: 20px 0;
+  margin: 100px auto 100%;
   padding: 30px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
   background-color: white;
   box-sizing: border-box;
+  width: 50%;
 }
 
 .container h3 {
@@ -1014,6 +1015,15 @@ form input[type="submit"]:hover {
   font-weight: normal;
   font-size: 20px;
   color: #666;
+}
+
+.container-error {
+  margin: 100px auto 100%;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+  background-color: white;
+  box-sizing: border-box;
+  width: 90%;
 }
 
 .comments {
@@ -1040,15 +1050,17 @@ footer p {
 }
 
 .search-form {
-  text-align: center;
-  padding-top: 32px;
-  position: relative;
-  left: 220px;
-  top: 50px;
+  text-align: right;
+    padding-top: 32px;
+    left: 220px;
+    top: 50px;
+    padding: 100px 100px;
+    position: absolute;
+    right: 120px;
 }
 
 .search-form .search-input {
-  width: 30%;
+  width: 60%;
   margin-right: 10px;
 }
 
@@ -1070,7 +1082,7 @@ footer p {
 }
 
 .detail{
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 100px;
   border: 1px solid #696969; 
   background-color: white;
@@ -1080,5 +1092,37 @@ footer p {
   background-image: url("photo-1636487658572-de4646fc9dd6.jpeg");
   background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  position: relative;
+}
+
+.contents row{
+  height: 500px;
+  width: 50%;
+}
+
+.title-contents {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+}
+
+
+.service-explain-top {
+font-size: 125px;
+margin-bottom: 0;
+margin-top: 50px;
+color: rgb(255, 255, 255,0.7);
+text-shadow:0 0 10px rgba(145, 4, 150, 0.9);
+}
+
+.service-explain-bottom{
+  font-size: 125px;
+  margin-top: 0;
+  color: rgb(255, 255, 255,0.7);
+  text-shadow:0 0 10px rgba(145, 4, 150, 0.9);
 }
