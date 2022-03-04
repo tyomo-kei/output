@@ -490,8 +490,6 @@ ul li {
 .row .grid-11,
 .row .grid-12 {
   float: left;
-  margin-left: 0.9%;
-  margin-right: 0.9%;
 }
 
 .row .grid-1 {
@@ -739,16 +737,16 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 
 header.header {
   padding: 2vh 15vw;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 5;
-    height: 62px;
-    background-color: rgba(0, 0, 0, 0);
-    width: 100vw;
-    display: flex;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: 62px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100vw;
+  display: flex;
 }
 
 header.header div.header__bar.row {
@@ -780,20 +778,16 @@ header.header div.header__bar.row div.grid-6 a.post {
 
 header.header .user_nav {
   position: relative;
-  height: 100px;
   right: 0;
 }
 
 header.header .user_nav span {
-  top: 5px;
-  display: block;
-  float: left;
-  margin-left: 30px;
-  width: 150px;
-  height: 50px;
-  font-size: 1em;
-  cursor: pointer;
-  position: relative;
+    display: block;
+    float: left;
+    width: 150px;
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
 }
 
 header.header .user_nav span:after {
@@ -1083,10 +1077,10 @@ footer p {
 }
 
 .detail{
-  margin-top: 100px;
-  margin-bottom: 100px;
-  border: 1px solid #696969; 
-  background-color: white;
+  margin: 100px auto;
+    border: 1px solid #696969;
+    background-color: white;
+    width: 70%;
 }
 
 .form-image{
@@ -1126,4 +1120,18 @@ text-shadow:0 0 10px rgba(145, 4, 150, 0.9);
   margin-top: 0;
   color: rgb(255, 255, 255,0.7);
   text-shadow:0 0 10px rgba(145, 4, 150, 0.9);
+}
+
+.post-1{
+padding: 8px 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+  display: inline-block;
+  background: linear-gradient(-135deg, #FF00FF, #9941D8);
+  width:14vw;
+  height: 4vh;
+  font-size: 1.5vh;
+  margin-top: 6px;
 }
