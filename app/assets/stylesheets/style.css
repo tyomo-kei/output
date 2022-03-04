@@ -104,7 +104,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome. */
 h1 {
-  font-size: 2em;
+  font-size: 2vh;
   margin: 0.67em 0;
 }
 
@@ -471,9 +471,7 @@ ul li {
 }
 
 .row {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   *zoom: 1;
@@ -714,6 +712,9 @@ header.header div.header__bar.row div.grid-6 a.post {
   border-radius: 3px;
   display: inline-block;
   background: linear-gradient(-135deg, #FF00FF, #9941D8);
+  width: 7vw;
+  height: 4vh;
+  font-size: 1.5vh;
 }
 
 .btn:hover,
@@ -737,19 +738,23 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 }
 
 header.header {
-  padding: 10px;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 5;
-  height: 62px;
-  background-color:rgba(0, 0, 0, 0);
+  padding: 2vh 15vw;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    height: 62px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100vw;
+    display: flex;
 }
 
 header.header div.header__bar.row {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header.header div.header__bar.row h1.grid-6 {
@@ -760,6 +765,7 @@ header.header div.header__bar.row h1.grid-6 {
 
 header.header div.header__bar.row h1.grid-6 a {
   display: block;
+  font-size: 3vh;
 }
 
 header.header div.header__bar.row div.grid-6 {
@@ -980,9 +986,7 @@ div.contents.row .success h3 {
 
 form input,
 form textarea {
-  width: 100%;
-  margin: 5px 0 15px;
-  padding: 10px;
+  width: 20%;
   border: 1px solid #D8D8D8;
   border-radius: 5px;
   font-family: "游ゴシック", "YuGothic";
@@ -993,7 +997,7 @@ form input[type="submit"] {
   border-radius: 20px;
   color: #fff;
   border: 0;
-  font-size: 18px;
+  font-size: 2vh;
 }
 
 form input[type="submit"]:hover {
@@ -1050,22 +1054,19 @@ footer p {
 }
 
 .search-form {
-  text-align: right;
-    padding-top: 32px;
-    left: 220px;
-    top: 50px;
-    padding: 100px 100px;
-    position: absolute;
-    right: 120px;
+  width: 30%;
 }
 
 .search-form .search-input {
-  width: 60%;
+  width: 14vw;
+  height: 6vh;
   margin-right: 10px;
+  font-size: 2vh;
 }
 
 .search-form .search-btn {
-  width: 10%;
+  width: 4vw;
+  height: 6vh;
 }
 
 .detail-top{
@@ -1113,15 +1114,15 @@ footer p {
 
 
 .service-explain-top {
-font-size: 125px;
+font-size: 16.6vh;
 margin-bottom: 0;
-margin-top: 50px;
+margin-top: 0;
 color: rgb(255, 255, 255,0.7);
 text-shadow:0 0 10px rgba(145, 4, 150, 0.9);
 }
 
 .service-explain-bottom{
-  font-size: 125px;
+  font-size: 16.6vh;
   margin-top: 0;
   color: rgb(255, 255, 255,0.7);
   text-shadow:0 0 10px rgba(145, 4, 150, 0.9);
