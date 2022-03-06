@@ -2,7 +2,7 @@ class ResolutionsController < ApplicationController
   before_action :move_to_index, except: [:index, :show, :search]
 
   def index
-    @resolutions = Resolution.includes(:user).order("created_at DESC")
+    @resolutions = Resolution.includes(:user).order('created_at DESC')
   end
 
   def new
@@ -12,7 +12,7 @@ class ResolutionsController < ApplicationController
   def create
     @resolution = Resolution.new(resolution_params)
     if @resolution.save
-      redirect_to root_path 
+      redirect_to root_path
     else
       render :new
     end
@@ -21,12 +21,12 @@ class ResolutionsController < ApplicationController
   def destroy
     resolution = Resolution.find(params[:id])
     resolution.destroy
-    redirect_to root_path 
+    redirect_to root_path
   end
 
   def show
     @resolution = Resolution.find(params[:id])
-  end  
+  end
 
   def edit
     @resolution = Resolution.find(params[:id])
@@ -41,20 +41,17 @@ class ResolutionsController < ApplicationController
     end
   end
 
-
   def search
     @resolutions = Resolution.search(params[:keyword])
   end
 
   private
+
   def resolution_params
     params.require(:resolution).permit(:erroe_message, :language, :status, :code, :cauce).merge(user_id: current_user.id)
   end
 
   def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
+    redirect_to action: :index unless user_signed_in?
   end
 end
-

@@ -1,24 +1,57 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション名
+output
+# アプリケーション概要
+プログラミング学習を始めたばかりの方が簡単にアウトプットでき、エラー解決した際に項目に沿って入力することでまずはアウトプットする行動を習慣化します。
+# URL
+https://output.herokuapp.com/
 
-Things you may want to cover:
+# テスト用アカウント
+- Basic認証id : admin
+- Basic認証パスワード : 2222
+- メールアドレス : test@test
+- パスワード : test1234
 
-* Ruby version
+# 利用方法
 
-* System dependencies
+## エラー解消をアウトプット
+---
+1. トップページ（一覧ページ）のヘッダーからユーザー新規登録を行う
+2. エラー解決フォームボタンから、内容（エラーメッセージ・言語・エラーが起きた状況・コードを記述・原因）を入力し投稿する
 
-* Configuration
+## 他者の投稿した記事を閲覧する
+---
+1. トップページを下にスクロールすると一覧を閲覧できる
+2. 投稿者名をクリックするとユーザー詳細画面に遷移し、ユーザーが投稿したすべての記事を閲覧できる。
+3. 詳細ボタンを押すと記事の詳細を閲覧できる。
+4. トップページの検索キーワードを入力し、検索ボタンを押すと検索結果が表示される。
 
-* Database creation
+# アプリケーションを作成した背景
+プログラミング学習を始めてアウトプットしたいという気持ちがあったが、マークダウン記法の理解不足・文章の書き方がイメージできず、始めることができないという課題がありました。
+プログラミング学習を始めたばかりの方は同様の問題を抱えていると推測し、課題を解決するために項目に沿って入力することで簡単にアウトプットでき、アウトプットを習慣化できるアプリを開発しました。
 
-* Database initialization
+# 洗い出した要件
+https://docs.google.com/spreadsheets/d/1BU5pKcVIBkIAev0JQ1tI2f1p8QOh2jysLLdWl0WM1Zg/edit#gid=0
 
-* How to run the test suite
+# 実装した機能についての画像やGIfおよび説明
 
-* Services (job queues, cache servers, search engines, etc.)
+# 実装予定の機能
+- 現在、記事（タイトル・内容）投稿機能を実装中
+- 投稿する際に画像を文章に埋め込める機能
+- マークダウン記法に対応できる投稿フォーム
 
-* Deployment instructions
+# データベース設計
+[![Image from Gyazo](https://i.gyazo.com/2bd9594225d1416cbe41646f87fe10b8.png)](https://gyazo.com/2bd9594225d1416cbe41646f87fe10b8)
 
-* ...
+# 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/31473c927236041b914f37429d5ddf9e.png)](https://gyazo.com/31473c927236041b914f37429d5ddf9e)
+
+# 開発環境
+- フロントエンド
+- バックエンド
+- インフラ
+- テキストエディタ
+
+# 工夫したポイント
+簡単に投稿できるように操作を最小限にしました。
