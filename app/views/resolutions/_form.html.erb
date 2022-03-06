@@ -1,7 +1,7 @@
  <%= form_with(model: @resolution, local: true) do |form| %>
   エラーメッセージ
   <div class="reslution-form"> 
-    <%= form.text_field :erroe_message %>
+    <%= form.text_area :erroe_message %>
   </div>
     言語
   <div class="reslution-form"> 
@@ -9,7 +9,7 @@
   </div>
     エラーが起きた状況
   <div class="reslution-form"> 
-    <%= form.text_field :status %>
+    <%= form.text_area :status %>
   </div>
     コードを記述
   <div class="reslution-form"> 

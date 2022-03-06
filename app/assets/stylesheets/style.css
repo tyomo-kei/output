@@ -783,7 +783,7 @@ header.header .user_nav {
 header.header .user_nav span {
     display: block;
     float: left;
-    width: 150px;
+    width: 250px;
     font-size: 30px;
     cursor: pointer;
     position: relative;
