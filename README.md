@@ -45,8 +45,7 @@ https://docs.google.com/spreadsheets/d/1BU5pKcVIBkIAev0JQ1tI2f1p8QOh2jysLLdWl0WM
 [![Image from Gyazo](https://i.gyazo.com/2bd9594225d1416cbe41646f87fe10b8.png)](https://gyazo.com/2bd9594225d1416cbe41646f87fe10b8)
 
 # 画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/31473c927236041b914f37429d5ddf9e.png)](https://gyazo.com/31473c927236041b914f37429d5ddf9e)
-
+[![Image from Gyazo](https://i.gyazo.com/3b52e76eea222f6cd8a95269497ca93a.png)](https://gyazo.com/3b52e76eea222f6cd8a95269497ca93a)
 # 開発環境
 - フロントエンド
 - バックエンド
