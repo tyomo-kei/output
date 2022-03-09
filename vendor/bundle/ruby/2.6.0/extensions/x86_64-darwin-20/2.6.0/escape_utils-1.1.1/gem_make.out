@@ -1,0 +1,221 @@
+current directory: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/escape_utils-1.1.1/ext/escape_utils
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/bin/ruby -I /Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20220309-38900-663cka.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/escape_utils-1.1.1/ext/escape_utils
+make "DESTDIR=" clean
+
+current directory: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/escape_utils-1.1.1/ext/escape_utils
+make "DESTDIR="
+compiling buffer.c
+compiling escape_utils.c
+escape_utils.c:48:20: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        rb_ivar_set(self, rb_intern("@html_secure"), val);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+escape_utils.c:48:20: note: '{' token is here
+        rb_ivar_set(self, rb_intern("@html_secure"), val);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+escape_utils.c:48:20: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        rb_ivar_set(self, rb_intern("@html_secure"), val);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+escape_utils.c:48:20: note: ')' token is here
+        rb_ivar_set(self, rb_intern("@html_secure"), val);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+escape_utils.c:62:22: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        if (rb_funcall(val, rb_intern("<="), 1, rb_cString) == Qnil)
+                            ^~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+escape_utils.c:62:22: note: '{' token is here
+        if (rb_funcall(val, rb_intern("<="), 1, rb_cString) == Qnil)
+                            ^~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+escape_utils.c:62:22: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        if (rb_funcall(val, rb_intern("<="), 1, rb_cString) == Qnil)
+                            ^~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+escape_utils.c:62:22: note: ')' token is here
+        if (rb_funcall(val, rb_intern("<="), 1, rb_cString) == Qnil)
+                            ^~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+escape_utils.c:68:20: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        rb_ivar_set(self, rb_intern("@html_safe_string_class"), val);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+escape_utils.c:68:20: note: '{' token is here
+        rb_ivar_set(self, rb_intern("@html_safe_string_class"), val);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+escape_utils.c:68:20: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        rb_ivar_set(self, rb_intern("@html_safe_string_class"), val);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+escape_utils.c:68:20: note: ')' token is here
+        rb_ivar_set(self, rb_intern("@html_safe_string_class"), val);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+escape_utils.c:226:62: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        rb_eEncodingCompatibilityError = rb_const_get(rb_cEncoding, rb_intern("CompatibilityError"));
+                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+escape_utils.c:226:62: note: '{' token is here
+        rb_eEncodingCompatibilityError = rb_const_get(rb_cEncoding, rb_intern("CompatibilityError"));
+                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+escape_utils.c:226:62: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        rb_eEncodingCompatibilityError = rb_const_get(rb_cEncoding, rb_intern("CompatibilityError"));
+                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+escape_utils.c:226:62: note: ')' token is here
+        rb_eEncodingCompatibilityError = rb_const_get(rb_cEncoding, rb_intern("CompatibilityError"));
+                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+escape_utils.c:228:11: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        ID_new = rb_intern("new");
+                 ^~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+escape_utils.c:228:11: note: '{' token is here
+        ID_new = rb_intern("new");
+                 ^~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+escape_utils.c:228:11: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        ID_new = rb_intern("new");
+                 ^~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+escape_utils.c:228:11: note: ')' token is here
+        ID_new = rb_intern("new");
+                 ^~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+escape_utils.c:229:20: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        ID_at_html_safe = rb_intern("@html_safe");
+                          ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+escape_utils.c:229:20: note: '{' token is here
+        ID_at_html_safe = rb_intern("@html_safe");
+                          ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+escape_utils.c:229:20: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        ID_at_html_safe = rb_intern("@html_safe");
+                          ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+escape_utils.c:229:20: note: ')' token is here
+        ID_at_html_safe = rb_intern("@html_safe");
+                          ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+12 warnings generated.
+compiling houdini_href_e.c
+compiling houdini_html_e.c
+compiling houdini_html_u.c
+houdini_html_u.c:75:62: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'unsigned int' [-Wshorten-64-to-32]
+                                const struct html_ent *entity = find_entity((char *)src, i);
+                                                                ~~~~~~~~~~~              ^
+1 warning generated.
+compiling houdini_js_e.c
+compiling houdini_js_u.c
+compiling houdini_uri_e.c
+compiling houdini_uri_u.c
+compiling houdini_xml_e.c
+linking shared-object escape_utils/escape_utils.bundle
+
+current directory: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/escape_utils-1.1.1/ext/escape_utils
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 escape_utils.bundle ./.gem.20220309-38900-4bwbw/escape_utils
