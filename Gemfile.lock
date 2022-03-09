@@ -118,6 +118,7 @@ GEM
     parallel (1.21.0)
     parser (3.1.1.0)
       ast (~> 2.4.1)
+    plugins (0.3.0)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -162,11 +163,13 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redcarpet (3.5.1)
     regexp_parser (2.2.1)
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
     rexml (3.2.5)
+    rouge (3.28.0)
     rubocop (1.25.1)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
@@ -249,9 +252,12 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen
   mysql2 (= 0.5.3)
+  plugins
   pry-rails
   puma (~> 3.11)
   rails (~> 6.0.0)
+  redcarpet
+  rouge
   rubocop
   sass-rails (~> 5)
   selenium-webdriver
