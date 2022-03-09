@@ -35,6 +35,9 @@ https://output.herokuapp.com/
 https://docs.google.com/spreadsheets/d/1BU5pKcVIBkIAev0JQ1tI2f1p8QOh2jysLLdWl0WM1Zg/edit#gid=0
 
 # 実装した機能についての画像やGIfおよび説明
+#### 投稿完了後の画面
+[![Image from Gyazo](https://i.gyazo.com/a4c3fc4fa7919929f70a2313acfc0c3e.jpg)](https://gyazo.com/a4c3fc4fa7919929f70a2313acfc0c3e)
+[![Image from Gyazo](https://i.gyazo.com/7cf85571f0e501521b83d001b1feb1f3.png)](https://gyazo.com/7cf85571f0e501521b83d001b1feb1f3)
 
 # 実装予定の機能
 - 現在、記事（タイトル・内容）投稿機能を実装中
@@ -53,6 +56,5 @@ https://docs.google.com/spreadsheets/d/1BU5pKcVIBkIAev0JQ1tI2f1p8QOh2jysLLdWl0WM
 - テキストエディタ
 
 # 工夫したポイント
-このアプリを使うユーザーはエラー解決で疲弊しており、集中力が切れていると推測されます。
-そんなユーザーのためにトップ画面は集中力アップ及び想像力アップに効果がある紫を取り入れました。
-また、ユーザー登録のみで簡単に投稿でき、投稿フォームは項目を記載し、初めてアウトプットする方も項目にそって入力することでスムーズに投稿できるように工夫しました。
+- ユーザー登録のみで簡単に投稿でき、投稿フォームは項目を記載し、初めてアウトプットする方も項目にそって入力することでスムーズに投稿できるように工夫しました。
+- 入力フォームはマークダウン記法を一部取り入れており、シンタックスハイライトでコードを見やすく、マークダウン記法で画像を埋め込めるようにし、より見やすく簡単に投稿できるようにしました。
