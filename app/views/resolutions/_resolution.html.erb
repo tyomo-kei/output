@@ -18,7 +18,7 @@
       <span style="color: white;">エラーメッセージ</span>
     </div> 
     <div class="detail-bottom"> 
-      <%= resolution.erroe_message %>
+      <%= qiita_markdown(resolution.erroe_message) %>
     </div>
     <div class="detail-top"> 
       <span style="color: white;">言語</span>
@@ -30,19 +30,19 @@
       <span style="color: white;">エラーが起きた状況</span>
     </div> 
     <div class="detail-bottom"> 
-      <%= resolution.status %>
+      <%= qiita_markdown(resolution.status) %>
     </div>
     <div class="detail-top"> 
       <span style="color: white;">コードを記述</span>
     </div> 
     <div class="detail-bottom"> 
-      <%= resolution.code %>
+      <%= qiita_markdown(resolution.code) %>
     </div>
     <div class="detail-top"> 
       <span style="color: white;">原因・教訓</span>
     </div> 
     <div class="detail-bottom"> 
-      <%= resolution.cauce %>
+      <%= qiita_markdown(resolution.cauce) %>
     </div>
   </div> 
 </div>
