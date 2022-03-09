@@ -1,0 +1,239 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: -fPIC
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIM failed with the following output:
+Change Dir: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cb706/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cb706.dir/build.make CMakeFiles/cmTC_cb706.dir/build
+Building C object CMakeFiles/cmTC_cb706.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DHAVE_STRUCT_STAT_ST_MTIM  -fPIC  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_cb706.dir/src.c.o -MF CMakeFiles/cmTC_cb706.dir/src.c.o.d -o CMakeFiles/cmTC_cb706.dir/src.c.o -c /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c
+/Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c:7:36: error: no member named 'st_mtim' in 'struct stat'
+  (void)sizeof(((struct stat *)0)->st_mtim);
+               ~~~~~~~~~~~~~~~~~~  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_cb706.dir/src.c.o] Error 1
+make: *** [cmTC_cb706/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtim);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_MTIME_NSEC failed with the following output:
+Change Dir: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_736b7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_736b7.dir/build.make CMakeFiles/cmTC_736b7.dir/build
+Building C object CMakeFiles/cmTC_736b7.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DHAVE_STRUCT_STAT_MTIME_NSEC  -fPIC  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_736b7.dir/src.c.o -MF CMakeFiles/cmTC_736b7.dir/src.c.o.d -o CMakeFiles/cmTC_736b7.dir/src.c.o -c /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c
+/Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c:6:36: error: no member named 'st_mtime_nsec' in 'struct stat'; did you mean 'st_mtimespec'?
+  (void)sizeof(((struct stat *)0)->st_mtime_nsec);
+                                   ^~~~~~~~~~~~~
+                                   st_mtimespec
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/stat.h:182:13: note: 'st_mtimespec' declared here
+struct stat __DARWIN_STRUCT_STAT64;
+            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/stat.h:166:2: note: expanded from macro '__DARWIN_STRUCT_STAT64'
+        __DARWIN_STRUCT_STAT64_TIMES \
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/stat.h:130:18: note: expanded from macro '__DARWIN_STRUCT_STAT64_TIMES'
+        struct timespec st_mtimespec;           /* time of last data modification */ \
+                        ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_736b7.dir/src.c.o] Error 1
+make: *** [cmTC_736b7/fast] Error 2
+
+
+Source file was:
+
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtime_nsec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test IS_WC99_C11_COMPAT_SUPPORTED failed with the following output:
+Change Dir: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9577b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9577b.dir/build.make CMakeFiles/cmTC_9577b.dir/build
+Building C object CMakeFiles/cmTC_9577b.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DIS_WC99_C11_COMPAT_SUPPORTED  -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk   -Wc99-c11-compat -MD -MT CMakeFiles/cmTC_9577b.dir/src.c.o -MF CMakeFiles/cmTC_9577b.dir/src.c.o.d -o CMakeFiles/cmTC_9577b.dir/src.c.o -c /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wc99-c11-compat' [-Wunknown-warning-option]
+1 warning generated.
+Linking C executable cmTC_9577b
+/usr/local/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9577b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9577b.dir/src.c.o -o cmTC_9577b 
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the prototype qsort_r exists for GIT_QSORT_R_GNU failed with the following output:
+Change Dir: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_746d5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_746d5.dir/build.make CMakeFiles/cmTC_746d5.dir/build
+Building C object CMakeFiles/cmTC_746d5.dir/CheckPrototypeDefinition.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_746d5.dir/CheckPrototypeDefinition.c.o -MF CMakeFiles/cmTC_746d5.dir/CheckPrototypeDefinition.c.o.d -o CMakeFiles/cmTC_746d5.dir/CheckPrototypeDefinition.c.o -c /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:6: error: conflicting types for 'qsort_r'
+void qsort_r(void *base, size_t nmemb, size_t size, int (*compar)(const void *, const void *, void *), void *arg) {
+     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/stdlib.h:341:7: note: previous declaration is here
+void     qsort_r(void *__base, size_t __nel, size_t __width, void *,
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_746d5.dir/CheckPrototypeDefinition.c.o] Error 1
+make: *** [cmTC_746d5/fast] Error 2
+
+
+
+#include <stdlib.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef qsort_r
+  cmakeRequireSymbol(0, &qsort_r);
+#endif
+}
+
+void qsort_r(void *base, size_t nmemb, size_t size, int (*compar)(const void *, const void *, void *), void *arg) {
+  return ;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the function qsort_s exists failed with the following output:
+Change Dir: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_391ac/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_391ac.dir/build.make CMakeFiles/cmTC_391ac.dir/build
+Building C object CMakeFiles/cmTC_391ac.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=qsort_s -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_391ac.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_391ac.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_391ac.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.22.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_391ac
+/usr/local/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_391ac.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=qsort_s -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_391ac.dir/CheckFunctionExists.c.o -o cmTC_391ac 
+Undefined symbols for architecture x86_64:
+  "_qsort_s", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_391ac] Error 1
+make: *** [cmTC_391ac/fast] Error 2
+
+
+
+Determining if the function clock_gettime exists in the rt failed with the following output:
+Change Dir: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ea52b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ea52b.dir/build.make CMakeFiles/cmTC_ea52b.dir/build
+Building C object CMakeFiles/cmTC_ea52b.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=clock_gettime -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_ea52b.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_ea52b.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_ea52b.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.22.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ea52b
+/usr/local/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea52b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=clock_gettime -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ea52b.dir/CheckFunctionExists.c.o -o cmTC_ea52b   -L/Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/time.h  -Wl,-rpath,/Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/time.h -lrt 
+ld: warning: directory not found for option '-L/Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/time.h'
+ld: library not found for -lrt
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_ea52b] Error 1
+make: *** [cmTC_ea52b/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test IS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED failed with the following output:
+Change Dir: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d5c84/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d5c84.dir/build.make CMakeFiles/cmTC_d5c84.dir/build
+Building C object CMakeFiles/cmTC_d5c84.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DIS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED  -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk   -Wimplicit-fallthrough=1 -MD -MT CMakeFiles/cmTC_d5c84.dir/src.c.o -MF CMakeFiles/cmTC_d5c84.dir/src.c.o.d -o CMakeFiles/cmTC_d5c84.dir/src.c.o -c /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wimplicit-fallthrough=1'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
+1 warning generated.
+Linking C executable cmTC_d5c84
+/usr/local/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5c84.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d5c84.dir/src.c.o -o cmTC_d5c84 
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file windows.h exists failed with the following output:
+Change Dir: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fd265/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fd265.dir/build.make CMakeFiles/cmTC_fd265.dir/build
+Building C object CMakeFiles/cmTC_fd265.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_fd265.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_fd265.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_fd265.dir/CheckIncludeFile.c.o -c /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'windows.h' file not found
+#include <windows.h>
+         ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_fd265.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_fd265/fast] Error 2
+
+
+
+Determining if the function _strtoi64 exists failed with the following output:
+Change Dir: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2d547/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2d547.dir/build.make CMakeFiles/cmTC_2d547.dir/build
+Building C object CMakeFiles/cmTC_2d547.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_strtoi64 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_2d547.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_2d547.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_2d547.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.22.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2d547
+/usr/local/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d547.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_strtoi64 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2d547.dir/CheckFunctionExists.c.o -o cmTC_2d547 
+Undefined symbols for architecture x86_64:
+  "__strtoi64", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_2d547] Error 1
+make: *** [cmTC_2d547/fast] Error 2
+
+
+
+Determining if the function iconv_open exists failed with the following output:
+Change Dir: /Users/nagatomokeisuke/projects/output/vendor/bundle/ruby/2.6.0/gems/rugged-1.4.2/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8eb27/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8eb27.dir/build.make CMakeFiles/cmTC_8eb27.dir/build
+Building C object CMakeFiles/cmTC_8eb27.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=iconv_open -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_8eb27.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_8eb27.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_8eb27.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.22.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8eb27
+/usr/local/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8eb27.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -D_GNU_SOURCE -fPIC -Werror -Wno-error -Wall -Wextra -Wdocumentation -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc11-extensions -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=iconv_open -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8eb27.dir/CheckFunctionExists.c.o -o cmTC_8eb27 
+Undefined symbols for architecture x86_64:
+  "_iconv_open", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_8eb27] Error 1
+make: *** [cmTC_8eb27/fast] Error 2
+
+
+

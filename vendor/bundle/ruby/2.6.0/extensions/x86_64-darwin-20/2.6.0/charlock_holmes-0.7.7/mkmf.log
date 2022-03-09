@@ -1,0 +1,194 @@
+"pkg-config --exists icu-i18n"
+| pkg-config --libs icu-i18n
+=> "-L/usr/local/Cellar/icu4c/69.1/lib -licui18n -licuuc -licudata\n"
+"clang -o conftest -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-darwin20 -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/usr/local/opt/icu4c/include -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib -L/usr/local/opt/icu4c/lib -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib  -fstack-protector-strong -L/usr/local/lib     -lruby.2.6   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"clang -o conftest -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-darwin20 -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/usr/local/opt/icu4c/include -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe conftest.c  -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib -L/usr/local/opt/icu4c/lib -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib  -fstack-protector-strong -L/usr/local/lib     -lruby.2.6 -L/usr/local/Cellar/icu4c/69.1/lib -licui18n -licuuc -licudata  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+| pkg-config --cflags-only-I icu-i18n
+=> "-I/usr/local/Cellar/icu4c/69.1/include\n"
+| pkg-config --cflags-only-other icu-i18n
+=> "\n"
+| pkg-config --libs-only-l icu-i18n
+=> "-licui18n -licuuc -licudata\n"
+package configuration for icu-i18n
+cflags: 
+ldflags: -L/usr/local/Cellar/icu4c/69.1/lib
+libs: -licui18n -licuuc -licudata
+
+"pkg-config --exists icu-io"
+| pkg-config --libs icu-io
+=> "-L/usr/local/Cellar/icu4c/69.1/lib -licuio -licui18n -licuuc -licudata\n"
+"clang -o conftest -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-darwin20 -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/opt/icu4c/include -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe  conftest.c  -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib -L/usr/local/opt/icu4c/lib -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib  -fstack-protector-strong -L/usr/local/lib -L/usr/local/Cellar/icu4c/69.1/lib     -licui18n -licuuc -licudata -lruby.2.6 -L/usr/local/Cellar/icu4c/69.1/lib -licuio -licui18n -licuuc -licudata  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+| pkg-config --cflags-only-I icu-io
+=> "-I/usr/local/Cellar/icu4c/69.1/include\n"
+| pkg-config --cflags-only-other icu-io
+=> "\n"
+| pkg-config --libs-only-l icu-io
+=> "-licuio -licui18n -licuuc -licudata\n"
+package configuration for icu-io
+cflags: 
+ldflags: -L/usr/local/Cellar/icu4c/69.1/lib
+libs: -licuio -licui18n -licuuc -licudata
+
+"pkg-config --exists icu-uc"
+| pkg-config --libs icu-uc
+=> "-L/usr/local/Cellar/icu4c/69.1/lib -licuuc -licudata\n"
+"clang -o conftest -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-darwin20 -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/opt/icu4c/include -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe   conftest.c  -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib -L/usr/local/opt/icu4c/lib -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib  -fstack-protector-strong -L/usr/local/lib -L/usr/local/Cellar/icu4c/69.1/lib -L/usr/local/Cellar/icu4c/69.1/lib     -licui18n -licuuc -licudata -licuio -licui18n -licuuc -licudata -lruby.2.6 -L/usr/local/Cellar/icu4c/69.1/lib -licuuc -licudata  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+| pkg-config --cflags-only-I icu-uc
+=> "-I/usr/local/Cellar/icu4c/69.1/include\n"
+| pkg-config --cflags-only-other icu-uc
+=> "\n"
+| pkg-config --libs-only-l icu-uc
+=> "-licuuc -licudata\n"
+package configuration for icu-uc
+cflags: 
+ldflags: -L/usr/local/Cellar/icu4c/69.1/lib
+libs: -licuuc -licudata
+
+have_library: checking for -licui18n... -------------------- yes
+
+"clang -o conftest -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-darwin20 -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/opt/icu4c/include -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe    conftest.c  -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib -L/usr/local/opt/icu4c/lib -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib  -fstack-protector-strong -L/usr/local/lib -L/usr/local/Cellar/icu4c/69.1/lib -L/usr/local/Cellar/icu4c/69.1/lib -L/usr/local/Cellar/icu4c/69.1/lib     -licui18n -licuuc -licudata -licuio -licui18n -licuuc -licudata -licuuc -licudata -lruby.2.6 -licui18n  -licui18n -licuuc -licudata -licuio -licui18n -licuuc -licudata -licuuc -licudata  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: 
+15: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for unicode/ucnv.h... -------------------- yes
+
+"clang -E -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-darwin20 -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/opt/icu4c/include -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe     conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <unicode/ucnv.h>
+/* end */
+
+--------------------
+
+have_library: checking for -lz... -------------------- yes
+
+"clang -o conftest -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-darwin20 -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/opt/icu4c/include -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe    conftest.c  -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib -L/usr/local/opt/icu4c/lib -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib  -fstack-protector-strong -L/usr/local/lib -L/usr/local/Cellar/icu4c/69.1/lib -L/usr/local/Cellar/icu4c/69.1/lib -L/usr/local/Cellar/icu4c/69.1/lib    -licui18n  -licui18n -licuuc -licudata -licuio -licui18n -licuuc -licudata -licuuc -licudata -lruby.2.6 -lz -licui18n  -licui18n -licuuc -licudata -licuio -licui18n -licuuc -licudata -licuuc -licudata  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: 
+15: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for -licuuc... -------------------- yes
+
+"clang -o conftest -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-darwin20 -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/opt/icu4c/include -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe    conftest.c  -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib -L/usr/local/opt/icu4c/lib -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib  -fstack-protector-strong -L/usr/local/lib -L/usr/local/Cellar/icu4c/69.1/lib -L/usr/local/Cellar/icu4c/69.1/lib -L/usr/local/Cellar/icu4c/69.1/lib    -lz -licui18n  -licui18n -licuuc -licudata -licuio -licui18n -licuuc -licudata -licuuc -licudata -lruby.2.6 -licuuc -lz -licui18n  -licui18n -licuuc -licudata -licuio -licui18n -licuuc -licudata -licuuc -licudata  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: 
+15: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for -licudata... -------------------- yes
+
+"clang -o conftest -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/x86_64-darwin20 -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0/ruby/backward -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include/ruby-2.6.0 -I. -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/Cellar/icu4c/69.1/include -I/usr/local/opt/icu4c/include -I/Users/nagatomokeisuke/.rbenv/versions/2.6.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -fno-common -pipe    conftest.c  -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib -L/usr/local/opt/icu4c/lib -L. -L/Users/nagatomokeisuke/.rbenv/versions/2.6.5/lib  -fstack-protector-strong -L/usr/local/lib -L/usr/local/Cellar/icu4c/69.1/lib -L/usr/local/Cellar/icu4c/69.1/lib -L/usr/local/Cellar/icu4c/69.1/lib    -licuuc -lz -licui18n  -licui18n -licuuc -licudata -licuio -licui18n -licuuc -licudata -licuuc -licudata -lruby.2.6 -licudata -licuuc -lz -licui18n  -licui18n -licuuc -licudata -licuio -licui18n -licuuc -licudata -licuuc -licudata  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: 
+15: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
