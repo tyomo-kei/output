@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'resolutions#index'
+  root to: 'users#index'
   resources :resolutions do
     collection do
       get 'search'
     end
   end
-  resources :users, only: :show
+  resources :articles
 end

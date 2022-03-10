@@ -1,6 +1,14 @@
-<div class="contents row">
-  <p class="user-detail"><%= @user.nickname %>さんの投稿一覧</p>
-  <% @resolutions.each do |resolution| %>
-   <%= render partial: "resolutions/resolution", locals: { resolution: resolution } %>
-  <% end %>
+ <div class="user-show">
+   <div class="contents row">
+    <div class="title-name">エラー解決</div>
+    <% @resolutions.each do |resolution| %>
+    <%= render partial: "resolutions/resolution", locals: { resolution: resolution } %>
+    <% end %>
+  </div>
+  <div class="contents row">
+     <div class="title-name">記事</div>
+      <% @articles.each do |article| %>
+      <%= render partial: "articles/article", locals: { article: article } %>
+      <% end %>
+  </div>
 </div>

@@ -1,0 +1,31 @@
+<div class="more">
+  <div class="detail">
+    <ul class="more_list">
+     <li>
+      <%= link_to '詳細', article_path(article.id), method: :get %>
+     </li>
+      <% if user_signed_in? && current_user.id == article.user_id %>
+      <li>
+        <%= link_to '編集', edit_article_path(article.id), method: :get %>
+      </li>
+      <li>
+        <%= link_to '削除', article_path(article.id), method: :delete %>
+      </li>
+      <% end %>
+    </ul>
+    <%= link_to "#{article.user.nickname}さん", "/users/#{article.user.id}"%>
+    <div class="detail-top"> 
+      <span style="color: white;">タイトル</span>
+    </div> 
+    <div class="detail-bottom"> 
+      <%= qiita_markdown(article.title) %>
+    </div>
+    <div class="detail-top"> 
+      <span style="color: white;">内容</span>
+    </div> 
+    <div class="detail-bottom"> 
+      <%= qiita_markdown(article.content) %>
+    </div>
+  </div> 
+</div>
+ 

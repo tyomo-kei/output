@@ -1,10 +1,7 @@
 class ResolutionsController < ApplicationController
   before_action :move_to_index, except: [:index, :show, :search]
 
-  def index
-    @resolutions = Resolution.includes(:user).order('created_at DESC')
-  end
-
+  
   def new
     @resolution = Resolution.new
   end

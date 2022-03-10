@@ -1078,7 +1078,7 @@ footer p {
 }
 
 .detail{
-  margin: 100px auto;
+  margin: 50px auto;
     border: 1px solid #696969;
     background-color: white;
     width: 70%;
@@ -1146,4 +1146,15 @@ text-shadow:0 0 10px rgba(145, 4, 150, 0.9);
 .reslution-form{
   width: 100%;
   padding-top: 5px;
+}
+
+.user-show{
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-name{
+  font-size: 4vh;
+  text-align: center;
+  margin-top: 100px;
 }
