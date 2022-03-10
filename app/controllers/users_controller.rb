@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @resolutions = @user.resolutions.order('created_at DESC')
+    @articles = @user.articles.order('created_at DESC')
   end
 end
 
