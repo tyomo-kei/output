@@ -1,7 +1,6 @@
 class ResolutionsController < ApplicationController
   before_action :move_to_index, except: [:index, :show, :search]
 
-  
   def new
     @resolution = Resolution.new
   end
@@ -36,10 +35,6 @@ class ResolutionsController < ApplicationController
     else
       render :edit
     end
-  end
-
-  def search
-    @resolutions = Resolution.search(params[:keyword])
   end
 
   private

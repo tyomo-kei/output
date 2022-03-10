@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users 
   root to: 'users#index'
-  resources :resolutions do
+  resources :resolutions 
+    
+  resources :articles
+  resources :users do
     collection do
       get 'search'
     end
   end
-  resources :articles
 end

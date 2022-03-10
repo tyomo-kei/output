@@ -37,10 +37,6 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def search
-    @resolutions = Resolution.search(params[:keyword])
-  end
-
   private
 
   def article_params
@@ -51,7 +47,4 @@ class ArticlesController < ApplicationController
     redirect_to action: :index unless user_signed_in?
   end
 
-  def move_to_index
-    redirect_to action: :index unless user_signed_in?
-  end
 end

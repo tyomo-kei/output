@@ -1,0 +1,9 @@
+<div class="contents row">
+<div class="title-name">検索結果</div>
+  <% @resolutions.each do |resolution| %>
+    <%= render partial: "resolutions/resolution", locals: { resolution: resolution } %>
+  <% end %>
+   <% @articles.each do |article| %>
+    <%= render partial: "articles/article", locals: { article: article } %>
+  <% end %>
+</div>
