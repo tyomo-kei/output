@@ -41,8 +41,9 @@ https://docs.google.com/spreadsheets/d/1BU5pKcVIBkIAev0JQ1tI2f1p8QOh2jysLLdWl0WM
 
 # 実装予定の機能
 - 現在、記事（タイトル・内容）投稿機能を実装中
-- 投稿する際に画像を文章に埋め込める機能
-- マークダウン記法に対応できる投稿フォーム
+- 参考になりましたボタン
+- 投稿フォームのプレビュー機能
+
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/2bd9594225d1416cbe41646f87fe10b8.png)](https://gyazo.com/2bd9594225d1416cbe41646f87fe10b8)
@@ -54,6 +55,7 @@ https://docs.google.com/spreadsheets/d/1BU5pKcVIBkIAev0JQ1tI2f1p8QOh2jysLLdWl0WM
 - バックエンド
 - インフラ
 - テキストエディタ
+- テストコード作成
 
 # 工夫したポイント
 - ユーザー登録のみで簡単に投稿でき、投稿フォームは項目を記載し、初めてアウトプットする方も項目にそって入力することでスムーズに投稿できるように工夫しました。

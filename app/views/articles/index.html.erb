@@ -1,0 +1,21 @@
+<div class="form-image">
+  <div class="title-contents">
+      <p>
+       <%= form_with(url: search_resolutions_path, local: true, method: :get, class: "search-form") do |form| %>
+          <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+          <%= form.submit "検索", class: "search-btn" %>
+        <% end %>
+      </P>
+      <p class="service-explain-top">
+        Let's
+      </p>
+      <p class="service-explain-bottom">
+        Start the output
+      </p>
+  </div>
+</div>
+<div class="contents row">
+    <% @articles.each do |article| %>
+    <%= render partial: "article", locals: { article: article } %>
+    <% end %>
+</div>
