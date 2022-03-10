@@ -1,48 +1,30 @@
 <div class="more">
   <div class="detail">
-  <ul class="more_list">
-    <li>
-      <%= link_to '詳細', resolution_path(resolution.id), method: :get %>
-    </li>
-      <% if user_signed_in? && current_user.id == resolution.user_id %>
+    <ul class="more_list">
+     <li>
+      <%= link_to '詳細', resolution_path(article.id), method: :get %>
+     </li>
+      <% if user_signed_in? && current_user.id == article.user_id %>
       <li>
-        <%= link_to '編集', edit_resolution_path(resolution.id), method: :get %>
+        <%= link_to '編集', edit_resolution_path(article.id), method: :get %>
       </li>
       <li>
-        <%= link_to '削除', resolution_path(resolution.id), method: :delete %>
+        <%= link_to '削除', resolution_path(article.id), method: :delete %>
       </li>
       <% end %>
     </ul>
-    <%= link_to "#{resolution.user.nickname}さん", "/users/#{resolution.user.id}"%>
+    <%= link_to "#{article.user.nickname}さん", "/users/#{article.user.id}"%>
     <div class="detail-top"> 
-      <span style="color: white;">エラーが起きた状況</span>
+      <span style="color: white;">タイトル</span>
     </div> 
     <div class="detail-bottom"> 
-      <%= qiita_markdown(resolution.status) %>
+      <%= qiita_markdown(article.title) %>
     </div>
     <div class="detail-top"> 
-      <span style="color: white;">言語</span>
+      <span style="color: white;">内容</span>
     </div> 
     <div class="detail-bottom"> 
-      <%= resolution.language %>
-    </div>
-    <div class="detail-top"> 
-      <span style="color: white;">エラーメッセージ</span>
-    </div> 
-    <div class="detail-bottom"> 
-      <%= qiita_markdown(resolution.erroe_message) %>
-    </div>
-    <div class="detail-top"> 
-      <span style="color: white;">コードを記述</span>
-    </div> 
-    <div class="detail-bottom"> 
-      <%= qiita_markdown(resolution.code) %>
-    </div>
-    <div class="detail-top"> 
-      <span style="color: white;">原因・教訓</span>
-    </div> 
-    <div class="detail-bottom"> 
-      <%= qiita_markdown(resolution.cauce) %>
+      <%= qiita_markdown(article.content) %>
     </div>
   </div> 
 </div>

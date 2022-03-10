@@ -1,0 +1,13 @@
+ <%= form_with(model: @article, local: true) do |form| %>
+  タイトル
+  <div class="reslution-form"> 
+    <%= form.text_area :title %>
+  </div>
+    内容
+  <div class="reslution-form"> 
+    <%= form.text_area :content, rows: "30"%>
+  </div>
+  <div class="reslution-form">
+    <%= form.submit "投稿する" %>
+  </div>
+<% end %>
