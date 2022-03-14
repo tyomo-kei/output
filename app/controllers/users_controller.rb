@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
 
   def index
-    @resolutions = Resolution.includes(:user).order('created_at DESC')
-    @articles = Article.includes(:user).order('created_at DESC')
+    @resolutions = Resolution.includes(:user).order('created_at DESC').limit(10)
+    @articles = Article.includes(:user).order('created_at DESC').limit(10)
   end
 
   def show

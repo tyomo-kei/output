@@ -45,8 +45,7 @@ https://docs.google.com/spreadsheets/d/1BU5pKcVIBkIAev0JQ1tI2f1p8QOh2jysLLdWl0WM
 - 参考になりましたボタン
 - 投稿フォームのプレビュー機能
 - テストコード作成
-- article・resolutionテーブルから検索できる機能
-- 一覧表示を最新の10件にする機能
+- 投稿できなかった際のエラーメッセージの表示
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/0e3e19e1a852b80c094822158698bfc8.png)](https://gyazo.com/0e3e19e1a852b80c094822158698bfc8)
