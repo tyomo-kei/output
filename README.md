@@ -40,15 +40,14 @@ https://docs.google.com/spreadsheets/d/1BU5pKcVIBkIAev0JQ1tI2f1p8QOh2jysLLdWl0WM
 
 # 実装した機能についての画像やGIfおよび説明
 #### 投稿完了後の画面
-[![Image from Gyazo](https://i.gyazo.com/95c90727db66c13f572b646a9021f663.jpg)](https://gyazo.com/95c90727db66c13f572b646a9021f663)
+[![Image from Gyazo](https://i.gyazo.com/730c57dc9d8d6438389c06da83b5de33.jpg)](https://gyazo.com/730c57dc9d8d6438389c06da83b5de33)
 # 実装予定の機能
 - 参考になりましたボタン
-- 投稿フォームのプレビュー機能
 - テストコード作成
 - 投稿できなかった際のエラーメッセージの表示
 
 # データベース設計
-[![Image from Gyazo](https://i.gyazo.com/0e3e19e1a852b80c094822158698bfc8.png)](https://gyazo.com/0e3e19e1a852b80c094822158698bfc8)
+[![Image from Gyazo](https://i.gyazo.com/98bbe23cc50b40d2fffd60f9a9aa25de.png)](https://gyazo.com/98bbe23cc50b40d2fffd60f9a9aa25de)
 # 画面遷移図
 [![Image from Gyazo](https://i.gyazo.com/3b52e76eea222f6cd8a95269497ca93a.png)](https://gyazo.com/3b52e76eea222f6cd8a95269497ca93a)
 # 開発環境
@@ -62,3 +61,4 @@ https://docs.google.com/spreadsheets/d/1BU5pKcVIBkIAev0JQ1tI2f1p8QOh2jysLLdWl0WM
 - ユーザー登録のみで簡単に投稿でき、投稿フォームは項目を記載し、初めてアウトプットする方も項目にそって入力することでスムーズに投稿できるように工夫しました。
 - 入力フォームはマークダウン記法を一部取り入れており、シンタックスハイライトでコードを見やすく、マークダウン記法で画像を埋め込めるようにし、より見やすく簡単に投稿できるようにしました。
 - 一覧表示をエラー解決と記事投稿の二つを表示しました。
+- 投稿フォームにプレビューを作成
