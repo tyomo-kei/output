@@ -1,6 +1,33 @@
 <div class="contents row">
   <div class="container-error">
-    <h3>編集する</h3>
-      <%= render partial: 'articleform' %>
+    <h3>記事フォーム</h3>
+      <%= form_with(model: @article, local: true) do |form| %>   <div class="form-group">
+    <div id='editor'>
+      <textarea name="article[content]" id="n" class="form-control" rows="20" v-model='input' debounce='50'>
+      </textarea>
+      <div class="di_inline_t preview">
+        <div v-html='input | marked'></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="reslution-form">
+    <%= form.submit "投稿する" %>
+  </div>
+<% end %>
+
+<script type="text/javascript">
+ window.onload = function() {
+ new Vue({
+ el: '#editor',
+ data: {
+ input: '<%== j @article.content %>',
+ },
+ filters: {
+ marked: marked,
+ },
+ });
+ };
+</script>
   </div>
 </div>
