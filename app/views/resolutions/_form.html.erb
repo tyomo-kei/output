@@ -1,25 +1,44 @@
- <%= form_with(model: @resolution, local: true) do |form| %>
-   エラーが起きた状況
-  <div class="reslution-form"> 
-    <%= form.text_area :status %>
+ <%= form_with(model: @resolution, local: true,id: :editor) do |form| %>
+   <div class="form-group">
+    <div id='editor'>
+      <textarea name="resolution[status]" id="n" class="form-control" rows="20" v-model='input' debounce='50'>
+      エラーが起きた状況
+
+
+      エラーメッセージ
+
+
+      言語
+
+
+      コードを記述
+
+
+      原因・教訓
+
+
+      </textarea>
+      <div class="di_inline_t preview">
+        <div v-html='input | marked'></div>
+      </div>
+    </div>
   </div>
-  エラーメッセージ
-  <div class="reslution-form"> 
-    <%= form.text_area :erroe_message %>
-  </div>
-    言語
-  <div class="reslution-form"> 
-    <%= form.text_field :language %>
-  </div>
-    コードを記述
-  <div class="reslution-form"> 
-    <%= form.text_area :code,  rows: "10" %>
-  </div>
-    原因・教訓
-  <div class="reslution-form"> 
-    <%= form.text_area :cauce,  rows: "10" %>
-  </div>
+  
   <div class="reslution-form">
     <%= form.submit "投稿する" %>
   </div>
 <% end %>
+
+<script type="text/javascript">
+ window.onload = function() {
+ new Vue({
+ el: '#editor',
+ data: {
+ input: '<%== j @resolution.status %>',
+ },
+ filters: {
+ marked: marked,
+ },
+ });
+ };
+</script>
