@@ -40,7 +40,7 @@ class ResolutionsController < ApplicationController
   private
 
   def resolution_params
-    params.require(:resolution).permit(:erroe_message, :language, :status, :code, :cauce).merge(user_id: current_user.id)
+    params.require(:resolution).permit(:status).merge(user_id: current_user.id)
   end
 
   def move_to_index

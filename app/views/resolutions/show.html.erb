@@ -16,34 +16,10 @@
       </ul>
       <%= link_to "#{@resolution.user.nickname}さん", "/users/#{@resolution.user.id}"%>
       <div class="detail-top"> 
-        <span style="color: white;">エラーが起きた状況</span>
+        <span style="color: white;">エラー解決の投稿</span>
       </div> 
       <div class="detail-bottom"> 
         <%= qiita_markdown(@resolution.status) %>
-      </div>
-      <div class="detail-top"> 
-        <span style="color: white;">言語</span>
-      </div> 
-      <div class="detail-bottom"> 
-        <%= @resolution.language %>
-      </div>
-      <div class="detail-top"> 
-        <span style="color: white;">エラーメッセージ</span>
-      </div> 
-      <div class="detail-bottom"> 
-        <%= qiita_markdown(@resolution.erroe_message) %>
-      </div>
-      <div class="detail-top"> 
-        <span style="color: white;">コードを記述</span>
-      </div> 
-      <div class="detail-bottom"> 
-        <%= qiita_markdown(@resolution.code) %>
-      </div>
-      <div class="detail-top"> 
-        <span style="color: white;">原因・教訓</span>
-      </div> 
-      <div class="detail-bottom"> 
-        <%= qiita_markdown(@resolution.cauce) %>
       </div>
     </div> 
   </div>
