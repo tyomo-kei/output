@@ -15,13 +15,7 @@
         <% end %>
         <%= link_to "#{@article.user.nickname}さん", "/users/#{@article.user.id}"%>
         <div class="detail-top"> 
-          <span style="color: white;">タイトル</span>
-        </div> 
-        <div class="detail-bottom"> 
-          <%= qiita_markdown(@article.title) %>
-        </div>
-        <div class="detail-top"> 
-          <span style="color: white;">内容</span>
+          <span style="color: white;">記事投稿</span>
         </div> 
         <div class="detail-bottom"> 
           <%= qiita_markdown(@article.content) %>
