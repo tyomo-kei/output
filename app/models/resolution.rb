@@ -4,7 +4,7 @@ class Resolution < ApplicationRecord
 
   def self.search(search)
     if search != ''
-      Resolution.where('erroe_message LIKE(?) OR status LIKE(?)', "%#{search}%", "%#{search}%")
+      Resolution.where('status LIKE(?)', "%#{search}%")
     else
       Resolution.all
     end
